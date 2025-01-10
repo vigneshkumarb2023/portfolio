@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Vignesh Kumar.B</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #89f7fe, #66a6ff);
+            color: #333;
+            transition: all 0.5s ease;
+        }
+
+        header {
+            background-color: #003366;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            font-family: 'Roboto', serif;
+            animation: slideDown 2s ease;
+        }
+
+        nav {
+            text-align: center;
+            margin: 15px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #003366;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff6600;
+        }
+
+        .container {
+            max-width: 80%;
+            margin: 20px auto;
+            padding: 30px;
+            background: #fff;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            transition: transform 0.3s;
+        }
+
+        .container:hover {
+            transform: scale(1.02);
+        }
+
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #003366;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .profile-photo:hover {
+            transform: rotate(360deg);
+        }
+
+        .animated-text {
+            font-size: 2em;
+            font-family: 'Roboto', serif;
+            animation: fadeInUp 2s ease;
+        }
+
+        .animated-developer-text {
+            color: #ff6600;
+            font-weight: bold;
+            animation: pulse 1.5s infinite;
+        }
+
+        .resume-button {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 15px 20px;
+            background: linear-gradient(90deg, #ff6600, #ff4500);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background 0.5s, transform 0.3s;
+        }
+
+        .resume-button:hover {
+            background: linear-gradient(90deg, #ff4500, #ff6600);
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: #003366;
+            font-size: 1.8em;
+            text-align: center;
+            font-family: 'Roboto', serif;
+            margin-top: 30px;
+        }
+
+        .interactive-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 20px;
+            margin: 20px auto;
+            justify-content: center;
+        }
+
+        .interactive-box div {
+            background: #f0f0f0;
+            color: #333;
+            border: 2px solid #003366;
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .interactive-box div:hover {
+            background-color: #ff6600;
+            color: #fff;
+            transform: scale(1.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #003366;
+            color: #fff;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #ff6600;
+            text-decoration: none;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vignesh Kumar.B</h1>
+    </header>
+
+    <nav>
+
+    </nav>
+
+    <div class="container">
+        <div class="profile-container">
+            <img src="vicky.jpg" alt="Vignesh Kumar" class="profile-photo">
+            <h1 class="animated-text">
+                Vignesh Kumar.B<br>
+                
+            </h1>
+        </div>
+        <center>
+
+           <a class="linkedin" href="https://www.linkedin.com/in/vignesh-kumar-544778276?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Check Linkedin</a>
+        </center>
+
+        <h2>About Me</h2>
+        <div class="interactive-box">
+          <div><strong>A Full Stack Developer portfolio highlights your front-end and back-end skills through projects, showcasing your expertise to potential employers or clients.</strong></div>
+        </div>
+
+
+        <h2>Education</h2>
+        <div class="interactive-box">
+            <div><strong>B.E., ECE</strong><br>Sri Eshwar College of Engineering<br></div>
+            <div><strong></strong><br>RKR Grks Matriculation Hr.Sec.School<br>
+            </div>
+           
+        </div>
+
+        <h2>Skills</h2>
+        <div class="interactive-box">
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>Java</div>
+            
+        </div>
+
+        <h2>Tools</h2>
+        <div class="interactive-box">
+            <div>VS Code</div>
+            <div>Eclipse</div>
+            <div>MongoDB</div>
+            <div>MySQL</div>
+        </div>
+
+        
+
+        <h2>Projects</h2>
+        <div class="interactive-box">
+            <div><a target="_blank">Autonomous Firefighting Robot</a></div>
+            <div><a  target="_blank">Automated Guided Vehicle</a></div>
+            <div><a  target="_blank">Smart Irrigation System</a></div>
+        </div>
+    </div>
+
+    <footer>
+        <a href="mailto:vigneshkumar.b2023lece@sece.ac.in"><i class="fas fa-envelope"></i></a>
+    </footer>
+</body>
+</html>
