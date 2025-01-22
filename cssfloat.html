@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive CSS Float Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f8ff; /* Light blue background for a softer look */
+        }
+        .container {
+            border: 3px solid #333; /* Darker border for more contrast */
+            background-color: #ffeb3b; /* Bright yellow background */
+            padding: 15px;
+            border-radius: 10px; /* Adds rounded corners to the container */
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for a modern effect */
+        }
+        .highlight {
+            float: left;
+            width: 40%;
+            background-color: #8bc34a; /* Slightly darker green */
+            padding: 15px;
+            border: 2px solid #4caf50; /* Green border */
+            margin-right: 15px;
+            border-radius: 8px; /* Rounded corners for consistency */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for the highlight box */
+        }
+        .content {
+            overflow: hidden;
+            font-size: 1.1rem; /* Slightly larger font size for better readability */
+            line-height: 1.6; /* Increases line spacing for better readability */
+        }
+        @media (max-width: 768px) {
+            .highlight, .content {
+                float: none; /* Remove float on smaller screens */
+                width: 100%; /* Full width for both sections */
+                margin-right: 0; /* Reset margin */
+                margin-bottom: 15px; /* Add spacing between sections */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="highlight">
+            <p>
+                Doraemon is a beloved cartoon character adored by kids all over the world. 
+                Doraemon is a robotic cat from the future who travels back in time to help a young boy named Nobita.
+            </p>
+        </div>
+        <div class="content">
+            <p>
+                With his magical gadgets and clever solutions, Doraemon always manages to turn Nobita's troubles into exciting adventures. 
+                Whether it's rescuing friends, solving problems, or teaching important life lessons, Doraemon's kind heart and unwavering friendship make him a true hero. 
+                Kids are captivated by Doraemon's cute appearance, humorous antics, and the imaginative world he brings to life, 
+                making him an endearing and unforgettable character in their lives.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

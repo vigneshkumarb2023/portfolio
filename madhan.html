@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madhan's Portfolio</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+            overflow-x: hidden;
+            animation: gradientAnimation 6s infinite alternate;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background: linear-gradient(135deg, #1e3c72, #2a5298);
+            }
+            100% {
+                background: linear-gradient(135deg, #1c92d2, #f2fcfe);
+            }
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            margin: 40px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #ffcb05;
+        }
+
+        .profile-image {
+            display: block;
+            margin: 0 auto 20px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            animation: bounce 3s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            font-size: 1.5rem;
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #ffcb05;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Madhan A</h1>
+        <p>2nd Year Engineering Student | Developer | Tech Enthusiast</p>
+    </header>
+
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="section" id="profile">
+            <h2>About Me</h2>
+            <img src="https://via.placeholder.com/150" alt="Madhan's Profile Picture" class="profile-image">
+            <p>Hi! My name is Madhan A. I am a second-year engineering student at Eshwar College of Engineering, pursuing a diploma in NPTC College. With a deep passion for technology and software development, I have been exploring different programming languages and working on innovative projects to improve my skills and solve real-world problems.</p>
+            <p>When I am not coding, I enjoy learning about new trends in technology, engaging in team activities, and participating in college events to broaden my perspective.</p>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="section" id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>C:</strong> Solid understanding of syntax and problem-solving using C.</li>
+                <li><strong>C++:</strong> Experience with OOP concepts and data structures.</li>
+                <li><strong>Java:</strong> Proficient in building applications and mastering core concepts.</li>
+                <li><strong>JavaScript:</strong> Knowledge of web development and interactive designs.</li>
+                <li><strong>Python:</strong> Versatile with data analysis, automation, and scripting.</li>
+            </ul>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="section" id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Drone Tracking System:</strong> Designed a system to manage and track drones and pilots, including flight logs and maintenance records. The project involved using Java and databases to ensure real-time tracking and data integrity.</li>
+                <li><strong>Event Management System:</strong> Developed a sponsorship and attendee management system for events. This system handled registration, sponsorship tiers, and check-ins dynamically, built using Java and integrated databases.</li>
+            </ul>
+        </div>
+
+        <!-- Certificates Section -->
+        <div class="section" id="certificates">
+            <h2>Certificates</h2>
+            <p>I have earned certifications in the following areas:</p>
+            <ul>
+                <li>Java Programming and Software Engineering Fundamentals</li>
+                <li>Python for Data Science and Machine Learning</li>
+                <li>Web Development Basics with HTML, CSS, and JavaScript</li>
+            </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="section" id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:madhan.example@gmail.com" style="color: #ffcb05;">madhan.example@gmail.com</a></p>
+            <div class="social-links">
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

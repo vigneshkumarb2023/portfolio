@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vignesh Kumar Portfolio</title>
+    <style>
+        body {
+            background-color: #121212;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #00bcd4;
+            margin: 10px 0;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+            border: 4px solid #333;
+            width: 150px;
+            height: 150px;
+        }
+
+        a {
+            display: inline-block;
+            margin: 15px 0;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ffffff;
+            background-color: #00796b;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #004d40;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2, .section h3 {
+            font-size: 1.8rem;
+            color: #00bcd4;
+            margin-bottom: 15px;
+        }
+
+        .card {
+            background-color: #1e1e1e;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            img {
+                width: 120px;
+                height: 120px;
+            }
+
+            a {
+                font-size: 0.9rem;
+                padding: 8px 15px;
+            }
+
+            .section h2, .section h3 {
+                font-size: 1.5rem;
+            }
+
+            .card {
+                width: 90%;
+            }
+        }
+
+        /* Animation */
+        .card {
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        .card:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+
+        .card:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+
+        .card:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center></center>
+        <header>
+            <h1>Vignesh Kumar.B</h1>
+        </header>
+
+        <img src="OIP.jpg" alt="Profile Picture">
+
+        <a href="https://www.linkedin.com/in/vignesh-kumar-544778276?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn Profile</a>
+
+        <section class="section">
+            <div class="card">
+                <h2>About Me</h2>
+                <p>A Full Stack Developer portfolio highlights your front-end and back-end skills through projects, showcasing your expertise to potential employers or clients.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="card">
+                <h2>Education</h2>
+                <p>Sri Eshwar College of Engineering</p>
+                <p>ECE A - Second Year</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="card">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Java</li>
+                    <li>HTML</li>
+                    <li>Database</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Tools</h3>
+                <ul>
+                    <li>MySQL</li>
+                    <li>Eclipse</li>
+                    <li>VS Code</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Projects</h3>
+                <ul>
+                    <li>Autonomous Firefighting Robot</li>
+                    <li>Automated Guided Vehicle</li>
+                    <li>Smart Irrigation System</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2025 Vignesh Kumar. All rights reserved.
+    </footer>
+</body>
+</html>
